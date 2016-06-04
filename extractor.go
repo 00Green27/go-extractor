@@ -34,6 +34,7 @@ func (e *extractor) Extract(src, dst string) error {
 	return err
 }
 
+// find rar 
 func extractRar(src, dst string) error {
 	path, err := exec.LookPath("rar")
 	if err == nil {
